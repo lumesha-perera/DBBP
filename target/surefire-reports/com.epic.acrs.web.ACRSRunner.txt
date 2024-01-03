@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: com.epic.acrs.web.ACRSRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 78.946 sec <<< FAILURE! - in com.epic.acrs.web.ACRSRunner
+Verify successful login enter valid username and password in acrs web portal(Verify Login Page of EPIC ACRS Web Portal)  Time elapsed: 75.18 sec  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Institute 1
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'PASINDU5320', ip: '192.168.20.147', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at com.epic.acrs.web.PageObject.CommonFunctionPO.selectInstitute(CommonFunctionPO.java:26)
+	at com.epic.acrs.web.StepDefinition.CommonFunctionStepDefinition.I_select_the_institute_as(CommonFunctionStepDefinition.java:22)
+	at ?.I select the institute as "Institute"(file:///C:/ACRS%20Web%20Automation/epic_acrs_web_automation/epic_acrs_web/src/resources/Features/LoginLogout.feature:13)
+
