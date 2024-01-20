@@ -1,7 +1,7 @@
 package com.epic.acrs.web.PageObject;
 
 import Utility.WebDriverHelper;
-import com.epic.acrs.web.PageFactory.ACRSPageFactory;
+import com.epic.acrs.web.PageFactory.DBBPPageFactory;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -32,66 +32,66 @@ public class OtherBankMngPO {
     }
 
     public void clickCommonconfiguration(){
-        ACRSPageFactory.pf.CommonConfigurationicon.click();
+        DBBPPageFactory.pf.CommonConfigurationicon.click();
     }
     public void clickOtherBank(){
-        ACRSPageFactory.pf.OtherBankicon.click();
+        DBBPPageFactory.pf.OtherBankicon.click();
     }
 
     public void clickAdd(){
-        ACRSPageFactory.pf.BankAdd.click();
+        DBBPPageFactory.pf.BankAdd.click();
 
     }
 
     public void enterBankCode(String bankcode){
-        ACRSPageFactory.pf.BankCode.clear();
-        ACRSPageFactory.pf.BankCode.sendKeys(bankcode);
+        DBBPPageFactory.pf.BankCode.clear();
+        DBBPPageFactory.pf.BankCode.sendKeys(bankcode);
     }
 
     public void enterBankName(String bankname){
-        ACRSPageFactory.pf.BankName.clear();
-        ACRSPageFactory.pf.BankName.sendKeys(bankname);
+        DBBPPageFactory.pf.BankName.clear();
+        DBBPPageFactory.pf.BankName.sendKeys(bankname);
 
     }
 
     public void enterBlankValueBankname(){
-        ACRSPageFactory.pf.BankName.clear();
-        ACRSPageFactory.pf.BankName.sendKeys(" ");
+        DBBPPageFactory.pf.BankName.clear();
+        DBBPPageFactory.pf.BankName.sendKeys(" ");
     }
     public void enterRemarks(String remark){
-        ACRSPageFactory.pf.BankRemark.clear();
-        ACRSPageFactory.pf.BankRemark.sendKeys(remark);
+        DBBPPageFactory.pf.BankRemark.clear();
+        DBBPPageFactory.pf.BankRemark.sendKeys(remark);
 
     }
 
     public boolean addDisablestatus(){
-        return ACRSPageFactory.pf.AddBankStatus.isEnabled();
+        return DBBPPageFactory.pf.AddBankStatus.isEnabled();
     }
 
     public void verifyAddSuccessMsg(String successMsg){
 
-        assertEquals(successMsg,ACRSPageFactory.pf.AddSuccessmsg.getText());
+        assertEquals(successMsg,DBBPPageFactory.pf.AddSuccessmsg.getText());
 
     }
 
     public void addSuccessOKBtn(){
-        ACRSPageFactory.pf.AddSuccessmsgOkBtn.click();
+        DBBPPageFactory.pf.AddSuccessmsgOkBtn.click();
     }
 
     public void selectCeft(){
-        ACRSPageFactory.pf.BankCeft.click();
+        DBBPPageFactory.pf.BankCeft.click();
     }
 
     public void clickSave(){
-        ACRSPageFactory.pf.BankSave.click();
+        DBBPPageFactory.pf.BankSave.click();
     }
 
     public void searchBankCode(String bankcode){
-        ACRSPageFactory.pf.SearchBankCode.clear();
-        ACRSPageFactory.pf.SearchBankCode.sendKeys(bankcode);
+        DBBPPageFactory.pf.SearchBankCode.clear();
+        DBBPPageFactory.pf.SearchBankCode.sendKeys(bankcode);
     }
     public void clickSearch(){
-        ACRSPageFactory.pf.SearchBtn.click();
+        DBBPPageFactory.pf.SearchBtn.click();
     }
 
     public boolean verifySearchValue(String searchValue) {
@@ -107,72 +107,72 @@ public class OtherBankMngPO {
         return serchResults;
     }
     public void clickEditIcon(){
-        ACRSPageFactory.pf.Editicon.click();
+        DBBPPageFactory.pf.Editicon.click();
     }
     public void updateBankName(String bankname){
-        ACRSPageFactory.pf.UpdateBankName.clear();
-        ACRSPageFactory.pf.UpdateBankName.sendKeys(bankname);
+        DBBPPageFactory.pf.UpdateBankName.clear();
+        DBBPPageFactory.pf.UpdateBankName.sendKeys(bankname);
 
     }
 
     public void updateRemarks(String remark){
-        ACRSPageFactory.pf.UpdateRemark.clear();
-        ACRSPageFactory.pf.UpdateRemark.sendKeys(remark);
+        DBBPPageFactory.pf.UpdateRemark.clear();
+        DBBPPageFactory.pf.UpdateRemark.sendKeys(remark);
 
     }
 
     public void updateStatus(String status){
-        Select Statusdrp = new Select(ACRSPageFactory.pf.UpdateStatus);
+        Select Statusdrp = new Select(DBBPPageFactory.pf.UpdateStatus);
         Statusdrp.selectByVisibleText(status);
     }
 
     public void clickUpdateCeft(){
-        ACRSPageFactory.pf.UpdateCeft.click();
+        DBBPPageFactory.pf.UpdateCeft.click();
     }
     public void clickUpdateSlip(){
-        ACRSPageFactory.pf.UpdateSlip.click();
+        DBBPPageFactory.pf.UpdateSlip.click();
     }
     public void clickUpdateBtn(){
-        ACRSPageFactory.pf.UpdateBtn.click();
+        DBBPPageFactory.pf.UpdateBtn.click();
     }
 
     //Delete
     public void clickDelete(){
-        ACRSPageFactory.pf.DeleteBtn.click();
+        DBBPPageFactory.pf.DeleteBtn.click();
     }
 
     public void clickDeleteOkBtn(){
-      ACRSPageFactory.pf.DeleteOkBtn.click();
+      DBBPPageFactory.pf.DeleteOkBtn.click();
 
     }
 
     public void verifyDialog(String searchValue){
 
-        assertEquals(searchValue,ACRSPageFactory.pf.DeleteDialogP1.getText());
+        assertEquals(searchValue,DBBPPageFactory.pf.DeleteDialogP1.getText());
 
     }
 
     public void clickOKBtn(){
-        ACRSPageFactory.pf.DeleteOkBtn.click();
+        DBBPPageFactory.pf.DeleteOkBtn.click();
     }
 
     public boolean emptyRow(){
-        return ACRSPageFactory.pf.Emptyrow.isDisplayed();
+        return DBBPPageFactory.pf.Emptyrow.isDisplayed();
     }
 
     public void searchReset(){
-        ACRSPageFactory.pf.SearchReset.click();
+        DBBPPageFactory.pf.SearchReset.click();
     }
 
 
 
     public void searchBankName(String Bank_Name){
-        ACRSPageFactory.pf.SearchBankName.sendKeys(Bank_Name);
+        DBBPPageFactory.pf.SearchBankName.sendKeys(Bank_Name);
     }
 
     public void searchStatus(String Status){
 
-            Select Statusdrp = new Select(ACRSPageFactory.pf.SearchStatus);
+            Select Statusdrp = new Select(DBBPPageFactory.pf.SearchStatus);
             Statusdrp.selectByVisibleText(Status);
 
 
@@ -193,131 +193,131 @@ public class OtherBankMngPO {
 
     //Reset function in Add interface
     public void resetAdd(){
-        ACRSPageFactory.pf.ResetAdd.click();
+        DBBPPageFactory.pf.ResetAdd.click();
 
     }
     public boolean resetBankCode(){
-        return ACRSPageFactory.pf.BankCode.getText().isEmpty();
+        return DBBPPageFactory.pf.BankCode.getText().isEmpty();
     }
 
     public boolean resetBnakName(){
-        return ACRSPageFactory.pf.BankName.getText().isEmpty();
+        return DBBPPageFactory.pf.BankName.getText().isEmpty();
 
     }
 
     public boolean resetRemark(){
-        return ACRSPageFactory.pf.BankRemark.getText().isEmpty();
+        return DBBPPageFactory.pf.BankRemark.getText().isEmpty();
 
     }
     public boolean resetCeft(){
-        return ACRSPageFactory.pf.BankCeft.isSelected();
+        return DBBPPageFactory.pf.BankCeft.isSelected();
     }
 
     public void updateReset(){
-        ACRSPageFactory.pf.ResetUpdate.click();
+        DBBPPageFactory.pf.ResetUpdate.click();
     }
 
     public void resetBankCodeUpdate(String Bankcode){
-         assertEquals(Bankcode,ACRSPageFactory.pf.BankCodeUpdate.getText());
+         assertEquals(Bankcode,DBBPPageFactory.pf.BankCodeUpdate.getText());
 
     }
 
     public void resetBankNameUpdate(String Bankname){
-        assertEquals(Bankname,ACRSPageFactory.pf.UpdateBankName.getText());
+        assertEquals(Bankname,DBBPPageFactory.pf.UpdateBankName.getText());
     }
 
     public void resetStatusUpdate(String status){
-        Select Statusdrp = new Select(ACRSPageFactory.pf.UpdateStatus);
+        Select Statusdrp = new Select(DBBPPageFactory.pf.UpdateStatus);
         List<WebElement> selectedOptions = Statusdrp.getAllSelectedOptions();
         WebElement element = selectedOptions.get(0);
         assertEquals(status,element.getText());
     }
 
     public boolean resetRemarkUpdate(){
-        return ACRSPageFactory.pf.BankRemark.getText().isEmpty();
+        return DBBPPageFactory.pf.BankRemark.getText().isEmpty();
 
     }
     public boolean resetCeftUpdate(){
-        return ACRSPageFactory.pf.UpdateCeft.isSelected();
+        return DBBPPageFactory.pf.UpdateCeft.isSelected();
     }
 
     public boolean resetSlipUpdate(){
-        return ACRSPageFactory.pf.UpdateSlip.isSelected();
+        return DBBPPageFactory.pf.UpdateSlip.isSelected();
 
     }
 
     public boolean resetBanknameSearch(){
-        return ACRSPageFactory.pf.SearchBankName.getText().isEmpty();
+        return DBBPPageFactory.pf.SearchBankName.getText().isEmpty();
 
     }
     public void resetStatusSearch(String status){
-        Select Statusdrp = new Select(ACRSPageFactory.pf.SearchStatus);
+        Select Statusdrp = new Select(DBBPPageFactory.pf.SearchStatus);
         List<WebElement> selectedOptions = Statusdrp.getAllSelectedOptions();
         WebElement element = selectedOptions.get(0);
         assertEquals(status,element.getText());
 
     }
     public boolean resetbankcodesearch(){
-        return ACRSPageFactory.pf.SearchBankCode.getText().isEmpty();
+        return DBBPPageFactory.pf.SearchBankCode.getText().isEmpty();
     }
 
     public void addBankCodeErrorMsg(String errormsg){
 
-        assertEquals(errormsg,ACRSPageFactory.pf.AddBankCodeErrormsg.getText());
+        assertEquals(errormsg,DBBPPageFactory.pf.AddBankCodeErrormsg.getText());
     }
 
     public boolean addDisableButton(){
-        return ACRSPageFactory.pf.AddDisable.isDisplayed();
+        return DBBPPageFactory.pf.AddDisable.isDisplayed();
     }
 
     public void addBankNameErrorMsg(String errormsg){
 
-        assertEquals(errormsg,ACRSPageFactory.pf.AddBankNameErrormsg.getText());
+        assertEquals(errormsg,DBBPPageFactory.pf.AddBankNameErrormsg.getText());
     }
 
     public void addRemarksErrorMsg(String errormsg){
-        assertEquals(errormsg,ACRSPageFactory.pf.AddRemarksErrormsg.getText());
+        assertEquals(errormsg,DBBPPageFactory.pf.AddRemarksErrormsg.getText());
 
     }
 
     public void addBlankValuesRemarks(){
-        ACRSPageFactory.pf.BankRemark.sendKeys(" ");
+        DBBPPageFactory.pf.BankRemark.sendKeys(" ");
     }
 
     public void updateBankNameClear(){
-        ACRSPageFactory.pf.UpdateBankName.clear();
-        //ACRSPageFactory.pf.UpdateBankName.sendKeys(" ");
-        ACRSPageFactory.pf.UpdateBankName.sendKeys(" ");
+        DBBPPageFactory.pf.UpdateBankName.clear();
+        //DBBPPageFactory.pf.UpdateBankName.sendKeys(" ");
+        DBBPPageFactory.pf.UpdateBankName.sendKeys(" ");
     }
 
     public void updateBankNameErrorMsg(String errormsg){
 
-        assertEquals(errormsg,ACRSPageFactory.pf.UpdateBankNameErrormsg.getText());
+        assertEquals(errormsg,DBBPPageFactory.pf.UpdateBankNameErrormsg.getText());
     }
 
     public boolean updateDisableButton(){
-        return ACRSPageFactory.pf.UpdateDisable.isDisplayed();
+        return DBBPPageFactory.pf.UpdateDisable.isDisplayed();
     }
 
     public void searchStatusValidation(String status){
-        Select Statusdrp = new Select(ACRSPageFactory.pf.SearchStatus);
+        Select Statusdrp = new Select(DBBPPageFactory.pf.SearchStatus);
         Statusdrp.selectByVisibleText(status);
         WebElement text= Statusdrp.getFirstSelectedOption();
         assertEquals(status,text.getText());
     }
     public void updateStatusValidation() {
-        Select Statusdrp = new Select(ACRSPageFactory.pf.UpdateStatus);
+        Select Statusdrp = new Select(DBBPPageFactory.pf.UpdateStatus);
         assertThat(Statusdrp.getOptions().get(0).isEnabled(), is(false));
     }
 
 
     public void updateEmptyReset(){
-        ACRSPageFactory.pf.UpdateRemark. sendKeys(" ");
-        //ACRSPageFactory.pf.UpdateRemark.clear();
+        DBBPPageFactory.pf.UpdateRemark. sendKeys(" ");
+        //DBBPPageFactory.pf.UpdateRemark.clear();
     }
 
     public void updateReseterrorMsg(String msg){
 
-        assertEquals(msg,ACRSPageFactory.pf.Update_Reset_Errormsg.getText());
+        assertEquals(msg,DBBPPageFactory.pf.Update_Reset_Errormsg.getText());
     }
 }
